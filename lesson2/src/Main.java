@@ -38,7 +38,7 @@ public class Main {
 
         for (int j = 0; j < m; j++) {
             endTime = list2.insertionSort(new IntegerComparator());
-            //list2.clone(list); попытался получить изначальный неотсортированный массив для следующей итерации
+            //list2.clone(list);
             totalEndTimeForInsertionSort += endTime;
         }
         System.out.printf("Average time to sort by insertion after %d retry: %d ms\n", m, totalEndTimeForInsertionSort / m);
