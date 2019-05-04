@@ -57,11 +57,22 @@ public class MyArrayQueue<Item> {
         return (Item)queue[start];
     }
 
+//    public String toString() {
+//        StringBuilder s = new StringBuilder();
+//        for (int i = 0; i < size;  i++) {
+//            s.append(queue[(start + i) % queue.length]).append(", ");
+//        }
+//        return s.toString();
+//    }
+
+
+    // task 2. вывод строки наоборот
     public String toString() {
         StringBuilder s = new StringBuilder();
-        for (int i = 0; i < size;  i++) {
-            s.append(queue[(start + i) % queue.length]).append(", ");
+        for (int i = 1; i <= size;  i++) {
+            s.append(queue[(end - i) % queue.length]).append(", ");
         }
         return s.toString();
     }
+
 }
