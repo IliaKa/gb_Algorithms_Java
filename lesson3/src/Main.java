@@ -17,25 +17,37 @@ public class Main {
 //        Expression expression = new Expression("[()}");
 //        System.out.println(expression.checkBrackets());
 
-        MyArrayQueue<Character> queue =  new MyArrayQueue<>();
-        queue.enQueue('a');
-        queue.enQueue('b');
-        queue.enQueue('c');
-        queue.enQueue('d');
-        queue.enQueue('e');
-        System.out.println(queue);
-        System.out.println(queue.size());
-        System.out.println(queue.peekFront());
-        queue.deQueue();
-        System.out.println(queue.peekFront());
-        queue.deQueue();
-        queue.deQueue();
-        queue.deQueue();
-        System.out.println(queue.size());
-        queue.deQueue();
-        queue.enQueue('f');
-        queue.enQueue('g');
-        queue.enQueue('h');
-        System.out.println(queue);
+//        MyArrayQueue<Character> queue =  new MyArrayQueue<>();
+//        queue.enQueue('a');
+//        queue.enQueue('b');
+//        queue.enQueue('c');
+//        queue.enQueue('d');
+//        queue.enQueue('e');
+//        System.out.println(queue);
+//        System.out.println(queue.size());
+//        System.out.println(queue.peekFront());
+//        queue.deQueue();
+//        System.out.println(queue.peekFront());
+//        queue.deQueue();
+//        queue.deQueue();
+//        queue.deQueue();
+//        System.out.println(queue.size());
+//        queue.deQueue();
+//        queue.enQueue('f');
+//        queue.enQueue('g');
+//        queue.enQueue('h');
+//        System.out.println(queue);
+
+        MyArrayDeque<Character> deque = new MyArrayDeque<>();
+        deque.insertRight('a');
+        deque.insertRight('b');
+        deque.insertRight('c');
+        deque.insertRight('d');
+        deque.insertRight('e');
+        deque.insertRight('f');
+        deque.insertRight('g');
+
+
+        System.out.println(deque);
     }
 }
